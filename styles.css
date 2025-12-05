@@ -32,14 +32,13 @@ ul {
     flex-direction: row
 }
 
-
 .navbar-left, .navbar-right{
     display: flex;
     width: 50%;
 .header-link {
     font-size: 18px;
     color: #e5e7eb;
-    text-decoration: none; /* <--- This deletes the underline */
+    text-decoration: none;
 }
 }
 .navbar-left{
@@ -50,7 +49,7 @@ ul {
     padding-left: 0;
 }
 .navbar-right {   
-    justify-content: flex-end; /* <--- THE MAGIC SAUCE */
+    justify-content: flex-end;
     align-items: center; 
     padding-right: 20px;
 }
@@ -87,7 +86,6 @@ ul {
     gap: 100px;
     margin: 50px;
     min-height: 60vh;
-    
 }
 .content-left {
     display: flex;
@@ -105,16 +103,15 @@ ul {
     align-self: center;
 }
 .upsc-image {
-    width: 100%;       /* Fluid width */
-    max-width: 450px;  /* Cap the max size */
-    height: auto;      /* Maintain aspect ratio */
-    /* ... animations ... */
+    width: 100%;
+    max-width: 450px;
+    height: auto;
 }
 
 .click-here {
   padding: 10px 20px;
   border-radius: 25px;
-  background-color: #71dee0e8; /* Pink */
+  background-color: #71dee0e8;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -123,12 +120,11 @@ ul {
 }
 
 .click-here:hover {
-  background-color: #ffbac4; /* Lighter Pink */
-  transform: translateY(-3px) scale(1.03); /* Slight lift and pop */
-  box-shadow: 0 5px 15px rgba(255, 100, 180, 0.4); /* Soft glow */
+  background-color: #ffbac4;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 5px 15px rgba(255, 100, 180, 0.4);
 }
 
-/* Adding a little heart icon idea */
 .click-here span {
   display: inline-block;
   margin-left: 5px;
@@ -169,11 +165,10 @@ ul {
     display: block;
     width: 60px;
     height: 6px;
-    background-color: #71dee0; /* Matches your button */
+    background-color: #71dee0;
     margin: 10px auto 0;
     border-radius: 10px
 }
-
 
 .subjects-container{
     display: flex;
@@ -197,24 +192,19 @@ img.subject-image{
     margin-top: 15px;
     text-align: center;
 }
-/* --- HOVER ANIMATIONS --- */
 
-/* When hovering the wrapper, move the image up */
 .subject-card:hover .subject-image {
-    transform: translateY(-12px) scale(1.05); /* Floats up and grows */
-    box-shadow: 0 20px 30px rgba(113, 222, 224, 0.5); /* Glowing shadow */
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 20px 30px rgba(113, 222, 224, 0.5);
 }
 
-/* When hovering, change text color */
 .subject-card:hover .subject-title {
-    color: #e189e2; /* A nice blue (or use your pink #ffbac4) */
-    transform: translateY(-5px); /* Text floats up a little bit too */
+    color: #e189e2;
+    transform: translateY(-5px);
 }
 
-/* --- SECTION 3: THE QUOTE BOX --- */
 .section-3 {
     background-color: #c7d9f5;
-    /* This fixes the "small box" issue by giving it height */
     padding: 100px 20px; 
     text-align: center;
     display: flex;
@@ -237,24 +227,13 @@ img.subject-image{
     line-height: 1.6;
 }
 
-
-
-
-/* --- SHARED STYLES FOR BOTH SECTIONS --- */
 .section-3, .section-4 {
-    /* 1. Force the image to cover the whole box */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
-    /* 2. Spacing: Big padding gives it that premium 'Apple website' feel */
     padding: 100px 20px; 
     width: 100%;
-    
-    /* 3. This ensures padding doesn't make the box wider than the screen */
     box-sizing: border-box; 
-    
-    /* 4. Flexbox to center everything vertically and horizontally */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,136 +241,117 @@ img.subject-image{
     text-align: center;
 }
 
-/* --- SECTION 3 SPECIFIC (Marilyn) --- */
 .section-3 {
-    /* The Magic Trick: Linear Gradient adds a 60% black tint over the image */
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('subjects/BG/marilyn.jpg');
 }
 
-/* --- SECTION 4 SPECIFIC (About Me) --- */
 .section-4 {
-    /* Slightly darker tint (75%) for better readability on the About text */
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('subjects/BG/bg.jpg');
 }
 
-/* --- HEADERS (The "Thick" Look) --- */
 .section-3 h2, .ABOUT-ME {
-    font-size: 48px;        /* Big */
-    font-weight: 900;       /* MAX THICKNESS */
+    font-size: 48px;
+    font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 2px;    /* Spreads letters slightly for impact */
-    margin-bottom: 40px;    /* Space below header */
-    color: #71dee0;         /* Your signature cyan color */
-    
-    /* Text Shadow: Makes the text lift off the screen */
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.8); 
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: #71dee0;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
 }
 
-/* --- MARILYN QUOTES --- */
 .quote {
     font-size: 24px;
-    font-family: 'Georgia', serif; /* Serif looks classy for quotes */
+    font-family: 'Georgia', serif;
     font-style: italic;
-    font-weight: 500;       /* Medium thickness */
-    color: #ef9acb;         /* Off-white is easier on eyes than pure white */
+    font-weight: 500;
+    color: #ef9acb;
     max-width: 800px;
-    margin-bottom: 25px;    /* Space between quotes */
+    margin-bottom: 25px;
     line-height: 1.6;
-    text-shadow: 1px 1px 4px black; /*Readability protection */
+    text-shadow: 1px 1px 4px black;
 }
 
-/* --- ABOUT ME TEXT --- */
 .about {
     font-size: 20px;
-    font-family: 'Roboto', sans-serif; /* Clean font for reading */
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #e5e7eb;
-    line-height: 1.8;       /* More breathing room between lines */
-    max-width: 900px;       /* Keeps text from stretching too wide */
+    line-height: 1.8;
+    max-width: 900px;
     margin-bottom: 40px;
 }
 
 .Marilyn {
-    color: #ffbac4; /* Pink accent */
+    color: #ffbac4;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-/* --- MOBILE RESPONSIVENESS --- */
 @media (max-width: 768px) {
     .section-3, .section-4 {
-        padding: 60px 15px; /* Less padding on mobile */
+        padding: 60px 15px;
     }
 
     .section-3 h2, .ABOUT-ME {
-        font-size: 32px; /* Smaller header on phone */
+        font-size: 32px;
     }
 
     .quote {
-        font-size: 18px; /* Readable quote size */
+        font-size: 18px;
     }
 
     .about {
         font-size: 16px;
-        text-align: justify; /* Optional: looks neat on phones */
+        text-align: justify;
         text-align-last: center;
     }
 }
 
-/* ---------------- Footer ---------------- */
-
-/* ---------------- Footer ---------------- */
-
 footer {
-    background-color: #111827; /* Darker than your header for depth */
-    color: #9ca3af; /* Soft gray text, easier on the eyes */
+    background-color: #111827;
+    color: #9ca3af;
     padding: 60px 20px;
     text-align: center;
-    border-top: 1px solid #374151; /* Subtle divider line */
+    border-top: 1px solid #374151;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px; /* Spacing between elements */
+    gap: 25px;
 }
 
-/* That Marilyn Quote styling */
 .footer-quote {
     font-family: 'Georgia', serif;
     font-style: italic;
-    color: #ffbac4; /* That distinct pink you use */
+    color: #ffbac4;
     font-size: 16px;
     opacity: 0.8;
 }
 
-/* The Social Container */
 .social-links {
     display: flex;
-    gap: 30px; /* Space between icons */
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
 
-/* The Icons (Emojis acting like buttons) */
 .social-icon {
     font-size: 28px;
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy animation */
-    filter: grayscale(100%); /* Start boring/gray */
-    display: inline-block; /* Needed for transform to work */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: grayscale(100%);
+    display: inline-block;
 }
 
-/* HOVER EFFECT - The magic sauce */
 .social-icon:hover {
-    filter: grayscale(0%); /* Bring back color */
-    transform: translateY(-8px) scale(1.2); /* Float up and grow */
-    text-shadow: 0 10px 20px rgba(113, 222, 224, 0.4); /* Glow effect */
+    filter: grayscale(0%);
+    transform: translateY(-8px) scale(1.2);
+    text-shadow: 0 10px 20px rgba(113, 222, 224, 0.4);
 }
 
-/* Copyright Text */
 .copyright {
     font-size: 14px;
     color: #6b7280;
@@ -400,7 +360,7 @@ footer {
 }
 
 .highlight {
-    color: #71dee0; /* Your signature Cyan */
+    color: #71dee0;
     font-weight: bold;
     cursor: pointer;
 }
@@ -410,7 +370,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Mobile Tweaks */
 @media (max-width: 768px) {
     footer {
         padding: 40px 15px;
@@ -420,47 +379,29 @@ footer {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* RESPONSIVE STYLES FOR MOBILE DEVICES */
-
-
 @media (max-width: 768px) {
     .header-content {
-        flex-direction: column-reverse; /* Puts Image on TOP, Text on BOTTOM (Standard Mobile Look) */
-        gap: 30px; /* Adds space between the image and text */
-        padding: 40px 20px; /* Adjust padding for smaller screens */
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding: 40px 20px;
     }
 
-    /* 2. Make both sections take up full width */
     .content-left, .content-right {
         width: 100%; 
         justify-content: center;
         align-items: center;
     }
 
-    /* 3. Ensure text stays centered and readable */
     .content-left h1 {
-        font-size: 36px; /* Slightly smaller font for mobile */
+        font-size: 36px;
         text-align: center;
     }
 
     .content-info {
-        text-align: center; /* Force center alignment on mobile */
-        max-width: 100%; /* Let it use the full phone width */
+        text-align: center;
+        max-width: 100%;
     }
     
-    /* 4. Fix the Navbar for mobile (Optional but recommended) */
     .navbar {
         flex-direction: column;
         gap: 15px;
