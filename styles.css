@@ -40,6 +40,14 @@ ul {
     color: #e5e7eb;
     text-decoration: none;
 }
+.navbar-left{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    flex-direction: row;
+    align-items: center; 
+
+}
 }
 .navbar-left{
     align-items: center; 
@@ -411,3 +419,4 @@ footer {
         justify-content: center;
     }
 }
+
