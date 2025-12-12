@@ -358,12 +358,12 @@ h2 {
 
 .subject-image {
     width: 100%;
-    height: 160px;
+    /* No more fixed height! We use aspect-ratio instead */
+    aspect-ratio: 1 / 1; 
     object-fit: cover;
     border-radius: 14px;
     border: 1px solid var(--border);
 }
-
 .section.dual {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
