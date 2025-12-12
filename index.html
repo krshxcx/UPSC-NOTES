@@ -7,108 +7,391 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="first-section">
-        <nav class="navbar">
+    <div class="gradient-bg" id="home">
+        <nav class="navbar glass">
             <div class="navbar-left">
-                <p class="header-logo"><img src="logo.jpg" width="75px"></p>
-                <p class="header-logo"> UPSC NOTES</p>
+                <p class="header-logo">UPSC NOTES</p>
+                <span class="tagline">Smart. Minimal. Exam ready.</span>
             </div>
-
             <div class="navbar-right">
-                <ul style="list-style-type: none;">
-                    <li class="header-link"><a  class="header-link" href="">Home</a></li>
-                    <li  class="header-link"><a  class="header-link" href="">Notes</a></li>
-                    <li  class="header-link"><a  class="header-link" href="">About</a></li>
+                <ul class="nav-links">
+                    <li><a class="header-link" href="#home">Home</a></li>
+                    <li><a class="header-link" href="#notes">Notes</a></li>
+                    <li><a class="header-link" href="#about">About</a></li>
+                    <li><a class="header-link" href="#resources">Resources</a></li>
+                    <li><a class="header-link" href="#contact">Contact</a></li>
                 </ul>
+                <button class="pill ghost theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+                <button class="pill ghost" id="adminOpen">Admin</button>
+                <button class="pill ghost">Login</button>
             </div>
         </nav>
-        <div class="fancy-divider"></div>
-        <div class="header-content">
-            <div class="content-left">
-                <h1> “Meaning May Be Optional. Revision Is Not.”</h1>
-                <p class="content-info"> “UPSC is basically a boss battle where the syllabus respawns every morning.
-But fear not, comrade. I built this corner of the internet so you don’t feel like a lone warrior screaming at Lakshmikant at 3 AM.
 
-Free notes. Clean summaries. No paywalls. No cringe.
-Just pure knowledge distilled like old monk philosophy.”</p>
-                <button class='click-here' type="button">Let’s Cook 📚🔥</button>
-            
+        <div class="hero glass">
+            <div class="content-left">
+                <div class="pill neon">New • 2025 Syllabus ready</div>
+                <h1>“Meaning may be optional. Revision is not.”</h1>
+                <p class="content-info">
+                    UPSC is a boss battle. I built this HQ so you never solo-queue again.
+                    Free, crisp, and playful—notes, cues, and checklists that respect your time.
+                </p>
+                <div class="cta-row">
+                    <button class="pill primary">Let’s Cook 📚🔥</button>
+                    <button class="pill secondary">Join 5k+ Aspirants</button>
+                </div>
+                <div class="metrics">
+                    <div class="metric">
+                        <span class="metric-number">1200+</span>
+                        <span class="metric-label">Concise Notes</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-number">98%</span>
+                        <span class="metric-label">PYQ Coverage</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-number">24/7</span>
+                        <span class="metric-label">Doubt Desk</span>
+                    </div>
+                </div>
             </div>
             <div class="content-right">
-                <img class="upsc-image" src="upsc.png" alt="header-image">
+                <div class="card hero-card">
+                    <img class="upsc-image" src="upsc.png" alt="UPSC prep">
+                    <div class="hero-card-body">
+                        <p class="badge">Laser-focused revision</p>
+                        <p class="mini">Flashcards • Mindmaps • Mock tracker • Smart reminders</p>
+                        <div class="progress">
+                            <span>Week 6 Sprint</span>
+                            <div class="bar"><span style="width: 78%"></span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
     </div>
 
-
-    <div class="section-2">
-        <div class="section-2-heading">
-            <h2>SUBJECTS</h2>
+    <section class="section" id="notes">
+        <div class="section-header">
+            <div>
+                <p class="eyebrow">Subjects</p>
+                <h2>Everything you need, nothing you don’t.</h2>
+                <p class="subhead">Curated, minimal, exam-ready notes. Tap to explore.</p>
+            </div>
+            <button class="pill ghost">Download All</button>
         </div>
-        <div class="cards">
-                    <div class="subjects-container">
-            <div class="subject-card">
+        <div class="subjects-grid">
+            <div class="subject-card card">
                 <img class="subject-image" src="subjects/history.png" alt="History">
-                <h3 class="subject-title">History</h3>
+                <h3>History</h3>
+                <p>Crack modern + ancient with timeline-first summaries.</p>
             </div>
-            <div class="subject-card">
+            <div class="subject-card card">
                 <img class="subject-image" src="subjects/geography.png" alt="Geography">
-                <h3 class="subject-title">Geography</h3>
+                <h3>Geography</h3>
+                <p>Geo-visual mind maps, climate cues, and PYQ hotspots.</p>
             </div>
-            <div class="subject-card">
+            <div class="subject-card card">
                 <img class="subject-image" src="subjects/polity.png" alt="Polity">
-                <h3 class="subject-title">Polity</h3>
+                <h3>Polity</h3>
+                <p>Laxmi distilled to one-liners plus constitutional flashcards.</p>
             </div>
-            <div class="subject-card">
+            <div class="subject-card card">
                 <img class="subject-image" src="subjects/economy.png" alt="Economics">
-                <h3 class="subject-title">Economy</h3>
+                <h3>Economy</h3>
+                <p>Macro micro cheat-sheets, budget bites, growth data packs.</p>
             </div>
-            <div class="subject-card">
+            <div class="subject-card card">
                 <img class="subject-image" src="subjects/environment.png" alt="Environment">
-                <h3 class="subject-title">Environment</h3>
+                <h3>Environment</h3>
+                <p>Eco-terms decoded with crisp infographics and mnemonics.</p>
             </div>
-            <div class="subject-card">
-                <img class="subject-image" src="subjects/science.png" alt="science">
-                <h3 class="subject-title">Science</h3>
+            <div class="subject-card card">
+                <img class="subject-image" src="subjects/geography.png" alt="Science & Tech">
+                <h3>Sci & Tech</h3>
+                <p>ISRO, AI, biotech—ready-made briefs for prelims mains.</p>
             </div>
-
         </div>
-    </div>
-    
-    </div>
-    <div class="section-3">
-            <h2>From Marilyn</h2>
-            <p class="quote">“Sometimes good things fall apart so better things can fall together.”.</p>
-            <p class="quote">“We are all of us stars, and we deserve to twinkle.”</p>
-            <p class="quote">“Always, always, always believe in yourself. Because if you don’t, then who will, sweetie?”</p>
-            <p class="quote">“Fear is stupid. So are regrets.”</p>
-    </div>
-    <div class="section-4">
-            <h2 class="ABOUT-ME">ABOUT ME</h2>
-            <p class="about">“Hi, I’m just a fellow wanderer who took a wrong turn while pondering existentialism and somehow ended up inside the UPSC syllabus.
+    </section>
 
-    I believe knowledge should be free, like air, or memes.
-    So I made this page for every aspirant who ever opened a book, stared at the first paragraph, and whispered ‘bhai ye kya bol raha hai?’
+    <section class="section" id="library">
+        <div class="section-header">
+            <div>
+                <p class="eyebrow">Live Library</p>
+                <h2>Download-ready notes & quick views.</h2>
+                <p class="subhead">Added by admin, synced live from the panel below.</p>
+            </div>
+            <input class="input" id="notesSearch" placeholder="Search notes by title/subject">
+        </div>
+        <div class="notes-grid" id="notesList"></div>
+    </section>
 
-    I’m obsessed with philosophy, human behavior, and long rants about why ecology shouldn’t be this boring.
-    My ideology?
-    Simple.
-    If one aspirant rises, we all rise. Comradeship over competition. Curiosity over fear. Notes over nonsense.
+    <section class="section workspace" id="workspace">
+        <div class="section-header">
+            <div>
+                <p class="eyebrow">Subject Workspace</p>
+                <h2>Deep dive per subject with inbuilt reader.</h2>
+                <p class="subhead">Pick a subject to browse its files; open instantly inside the page.</p>
+            </div>
+            <select class="input select" id="subjectSelect"></select>
+        </div>
 
-    If this page helps even one confused soul find clarity, then my job here is done.
-    Now go revise before your future self pulls your ear.From Now on IT'S NOT MY PAGE IT'S OUR PAGE”</p>
-    <h4 class="Marilyn">Nevermind, I'm a huge fan of Marilyn Monroe</h4>
-    </div>
-    <footer>
+        <div class="workspace-grid">
+            <div class="card">
+                <div class="subject-meta">
+                    <div>
+                        <p class="badge" id="subjectTag">Subject</p>
+                        <h3 id="subjectTitle">Select a subject</h3>
+                        <p class="mini" id="subjectDesc">Notes, maps, PYQ drills — all in one place.</p>
+                    </div>
+                    <div class="metrics mini">
+                        <div class="metric">
+                            <span class="metric-number" id="subjectCount">0</span>
+                            <span class="metric-label">Notes</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-number" id="subjectUpdated">—</span>
+                            <span class="metric-label">Last added</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="subject-tags" id="subjectTags"></div>
+            </div>
+            <div class="card">
+                <h3>Files in this subject</h3>
+                <div class="subject-file-list" id="subjectFiles"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="articles">
+        <div class="section-header">
+            <div>
+                <p class="eyebrow">Articles</p>
+                <h2>Fresh takes & crisp explainers.</h2>
+                <p class="subhead">Short, sweet, mains-ready pieces curated by admin.</p>
+            </div>
+            <input class="input" id="articlesSearch" placeholder="Search articles">
+        </div>
+        <div class="articles-grid" id="articlesList"></div>
+    </section>
+
+    <section class="section dual" id="resources">
+        <div class="section-left card">
+            <p class="eyebrow">Resource Hub</p>
+            <h2>Maximum features, zero clutter.</h2>
+            <ul class="feature-list">
+                <li>Adaptive study planner with weekly sprints.</li>
+                <li>Smart streaks & reminders that respect rest days.</li>
+                <li>One-click PYQ filters by topic, year, difficulty.</li>
+                <li>Flashcards + mind maps synced to your weak spots.</li>
+                <li>AI doubt desk with curated sources (no random guesses).</li>
+            </ul>
+            <div class="mini-grid">
+                <div class="chip">Mocks</div>
+                <div class="chip">Flashcards</div>
+                <div class="chip">PYQ</div>
+                <div class="chip">Mindmaps</div>
+                <div class="chip">Planner</div>
+                <div class="chip">Notes</div>
+            </div>
+        </div>
+        <div class="section-right">
+            <div class="stack card">
+                <h3>Quick Picks</h3>
+                <div class="stack-row">
+                    <div>
+                        <p class="badge">🔥 Hot</p>
+                        <p>50-day crash plan</p>
+                    </div>
+                    <button class="pill tiny">Start</button>
+                </div>
+                <div class="stack-row">
+                    <div>
+                        <p class="badge">🧠 Daily</p>
+                        <p>10 PYQs • 15 mins</p>
+                    </div>
+                    <button class="pill tiny">Drill</button>
+                </div>
+                <div class="stack-row">
+                    <div>
+                        <p class="badge">📌 Focus</p>
+                        <p>Weak areas: Polity / Env</p>
+                    </div>
+                    <button class="pill tiny">Fix</button>
+                </div>
+            </div>
+            <div class="card timeline">
+                <h3>Study Sprint</h3>
+                <div class="step">
+                    <span>Step 1</span>
+                    <p>Skim bullets + cues</p>
+                </div>
+                <div class="step">
+                    <span>Step 2</span>
+                    <p>Targeted PYQs</p>
+                </div>
+                <div class="step">
+                    <span>Step 3</span>
+                    <p>Flashcards till 90%+</p>
+                </div>
+                <div class="step">
+                    <span>Step 4</span>
+                    <p>Mock & reflection sheet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials">
+        <div class="section-header center">
+            <p class="eyebrow">Loved by aspirants</p>
+            <h2>Crazy good. Super cute. Highly professional.</h2>
+        </div>
+        <div class="testimonial-grid">
+            <div class="card quote-card">
+                <p>“The notes feel like a senior’s margin scribbles—zero fluff.”</p>
+                <span>Riya • AIR 116 mock series</span>
+            </div>
+            <div class="card quote-card">
+                <p>“Flashcards + PYQ filter saved me 2 hours daily. Ridiculous.”</p>
+                <span>Arjun • Working professional</span>
+            </div>
+            <div class="card quote-card">
+                <p>“Design is cute, but the rigor is deadly serious. Chef’s kiss.”</p>
+                <span>Ananya • Optional: PSIR</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="section-header">
+            <div>
+                <p class="eyebrow">About</p>
+                <h2>Built by a fellow wanderer.</h2>
+                <p class="subhead">
+                    Knowledge should be free—like air, or memes. If one aspirant rises,
+                    we all rise. Comradeship over competition. Curiosity over fear.
+                </p>
+            </div>
+            <div class="pill ghost">Marilyn fan club 💖</div>
+        </div>
+        <div class="about-grid">
+            <div class="card about-card">
+                <h3>Why this exists</h3>
+                <p>Notes over nonsense. Clean cues over clutter. Built at 3 AM so nobody studies alone.</p>
+            </div>
+            <div class="card about-card">
+                <h3>How it works</h3>
+                <p>Prep → Drill → Reflect. Automated streaks, revision loops, and weekly resets.</p>
+            </div>
+            <div class="card about-card">
+                <h3>Promise</h3>
+                <p>No paywalls. No cringe. Just distilled knowledge, beautifully delivered.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section faq">
+        <div class="section-header center">
+            <p class="eyebrow">FAQ</p>
+            <h2>Questions? Answered.</h2>
+        </div>
+        <div class="faq-search">
+            <input type="text" class="input" id="faqSearch" placeholder="Search FAQs (e.g., PYQ, planner, updates)">
+            <span class="mini">Instant filter — no fluff.</span>
+        </div>
+        <div class="faq-grid">
+            <details class="card">
+                <summary>How often are notes updated?</summary>
+                <p>Monthly for static subjects, weekly for CA, daily for errata.</p>
+            </details>
+            <details class="card">
+                <summary>Do you cover PYQs?</summary>
+                <p>98% mapped by topic, tagged by difficulty, with direct links to notes.</p>
+            </details>
+            <details class="card">
+                <summary>Is there a planner?</summary>
+                <p>Yes—drag-and-drop weekly sprints with auto-reminders and break days.</p>
+            </details>
+            <details class="card">
+                <summary>How do I connect?</summary>
+                <p>Join the Discord-like community and 24/7 doubt desk. Links below.</p>
+            </details>
+        </div>
+    </section>
+
+    <section class="section admin-section" id="admin">
+        <div class="section-header">
+            <div>
+                <p class="eyebrow">Admin Desk</p>
+                <h2>Upload notes, publish articles — no HTML edits needed.</h2>
+                <p class="subhead">Secure mini-console: login, add notes, post articles, manage live content.</p>
+            </div>
+            <div class="status-badge" id="adminStatus">Logged out</div>
+        </div>
+
+        <div class="admin-grid">
+            <div class="card">
+                <h3>Admin Login</h3>
+                <p class="mini">Demo credentials stored locally for now.</p>
+                <form id="adminLoginForm" class="stack gap-8">
+                    <input class="input" type="text" id="adminUser" placeholder="Username" required>
+                    <input class="input" type="password" id="adminPass" placeholder="Password" required>
+                    <button type="submit" class="pill primary">Login</button>
+                </form>
+                <button class="pill ghost" id="adminLogout">Logout</button>
+            </div>
+
+            <div class="card admin-only" id="subjectFormCard">
+                <h3>Create Subject</h3>
+                <form id="subjectForm" class="stack gap-8">
+                    <input class="input" type="text" id="subjectName" placeholder="Subject name" required>
+                    <textarea class="input" id="subjectInfo" placeholder="Short description" rows="2"></textarea>
+                    <input class="input" type="text" id="subjectTagsInput" placeholder="Tags (comma separated)">
+                    <button type="submit" class="pill primary">Add Subject</button>
+                </form>
+            </div>
+
+            <div class="card admin-only" id="noteFormCard">
+                <h3>Add Note</h3>
+                <form id="noteForm" class="stack gap-8">
+                    <input class="input" type="text" id="noteTitle" placeholder="Title" required>
+                    <select class="input select" id="noteSubject" required></select>
+                    <input class="input" type="url" id="noteLink" placeholder="Link to PDF/Drive/URL" required>
+                    <textarea class="input" id="noteDesc" placeholder="Short description" rows="3"></textarea>
+                    <button type="submit" class="pill secondary">Publish Note</button>
+                </form>
+            </div>
+
+            <div class="card admin-only" id="articleFormCard">
+                <h3>Post Article</h3>
+                <form id="articleForm" class="stack gap-8">
+                    <input class="input" type="text" id="articleTitle" placeholder="Article title" required>
+                    <textarea class="input" id="articleSummary" placeholder="Summary" rows="2" required></textarea>
+                    <textarea class="input" id="articleBody" placeholder="Body (markdown-friendly)" rows="4"></textarea>
+                    <input class="input" type="text" id="articleTags" placeholder="Tags (comma separated)">
+                    <button type="submit" class="pill primary">Publish Article</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
         <div class="footer-content">
-            <p class="footer-quote">"Imperfection is beauty, madness is genius."</p>
-            
+            <div>
+                <p class="footer-quote">“Imperfection is beauty, madness is genius.”</p>
+                <p class="subhead">Say hi, drop feedback, or send memes.</p>
+            </div>
+            <div class="cta-row">
+                <input class="input" type="email" placeholder="your@email.com">
+                <button class="pill primary">Get updates</button>
+            </div>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/saikrishna-durgam/" target="_blank" class="social-icon">💼</a>
                 <a href="https://www.x.com/krsh0410" target="_blank" class="social-icon">𝕏</a>
-                <a href="https://www.instagram.com/krsh0410" target="_blank" class="social-icon">📸</a> 
+                <a href="https://www.instagram.com/krsh0410" target="_blank" class="social-icon">📸</a>
                 <a href="mailto:krshxcx@gmail.com" class="social-icon">📧</a>
             </div>
-
             <p class="copyright">
                 Designed by <span class="highlight">Krishna</span> while procrastinating Polity. <br>
                 © 2025 UPSC NOTES.
@@ -116,5 +399,18 @@ Just pure knowledge distilled like old monk philosophy.”</p>
         </div>
     </footer>
 
+    <div class="viewer-backdrop" id="viewerModal">
+        <div class="viewer-card">
+            <div class="viewer-header">
+                <div>
+                    <p class="badge" id="viewerSubject">Subject</p>
+                    <h4 id="viewerTitle">Document</h4>
+                </div>
+                <button class="pill ghost tiny" id="viewerClose">Close</button>
+            </div>
+            <iframe id="viewerFrame" title="Document viewer"></iframe>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
